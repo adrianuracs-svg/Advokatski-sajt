@@ -15,17 +15,13 @@ export const Home = () => {
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-stone-900/80 to-stone-900/20 z-10" />
           <motion.img 
-            initial={{ scale: 1.1 }}
+            initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
-            src="https://images.unsplash.com/photo-1555354511-09678e789f36?auto=format&fit=crop&q=80&w=2000" 
-            alt="Novi Sad - Petrovaradin Fortress" 
-            className="w-full h-full object-cover opacity-50"
+            transition={{ duration: 15, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+            src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=2000" 
+            alt="Classic Law Library" 
+            className="w-full h-full object-cover opacity-40"
             referrerPolicy="no-referrer"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.src = "https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?auto=format&fit=crop&q=80&w=2000";
-            }}
           />
         </div>
 

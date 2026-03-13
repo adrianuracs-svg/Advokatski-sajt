@@ -8,28 +8,12 @@ import { Link } from 'react-router-dom';
 export const Team = () => {
   const { t } = useLanguage();
 
-  const team = [
-    {
-      name: 'Adrian Uracs',
-      role: 'Osnivač i vodeći advokat',
-      specialty: 'Međunarodno i EU pravo',
-      bio: 'Ekspert sa preko 15 godina iskustva u prekograničnim sporovima i savetovanju multinacionalnih korporacija.',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800'
-    },
-    {
-      name: 'Elena Marković',
-      role: 'Partner',
-      specialty: 'Privredno pravo i arbitraža',
-      bio: 'Specijalizovana za međunarodnu trgovinsku arbitražu i zaštitu stranih investicija u regionu.',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800'
-    },
-    {
-      name: 'Marko Nikolić',
-      role: 'Viši saradnik',
-      specialty: 'Pravo stranaca i imigracija',
-      bio: 'Vodeći stručnjak za pitanja boravka, radnih dozvola i državljanstva za strane državljane u Srbiji.',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800'
-    }
+  const teamImages = [
+    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800',
+    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800',
+    'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800',
+    'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=800',
+    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800'
   ];
 
   return (
@@ -38,13 +22,12 @@ export const Team = () => {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h1 className="text-4xl md:text-5xl font-bold text-stone-900 mb-6">{t.nav.team}</h1>
           <p className="text-stone-600 text-lg">
-            Naš tim čine vrhunski stručnjaci posvećeni pružanju najkvalitetnije pravne pomoći. 
-            Govorimo vaš jezik i razumemo vaše potrebe u međunarodnom okruženju.
+            Naš tim ne čine samo advokati i advokatski pripravnici, već i čitava mreža saradnika sa višegodišnjim iskustvom rada.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {team.map((member, idx) => (
+          {t.team.members.map((member: any, idx: number) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, scale: 0.95 }}
@@ -54,7 +37,7 @@ export const Team = () => {
             >
               <div className="aspect-[3/4] rounded-3xl overflow-hidden mb-8 relative">
                 <img 
-                  src={member.image} 
+                  src={teamImages[idx]} 
                   alt={member.name} 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"

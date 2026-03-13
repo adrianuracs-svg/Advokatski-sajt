@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './LanguageContext';
 import { Navbar, Footer } from './components/Layout';
+import { ChatBox } from './components/ChatBox';
 import { Home } from './pages/Home';
 import { Team } from './pages/Team';
 import { Practice } from './pages/Practice';
@@ -38,6 +39,7 @@ export default function App() {
             </Routes>
           </main>
           <Footer />
+          <ChatBox />
         </div>
       </Router>
     </LanguageProvider>

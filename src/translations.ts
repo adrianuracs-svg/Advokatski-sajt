@@ -55,6 +55,35 @@ export const translations = {
       address: 'Adresa: Knez Mihailova, Beograd, Srbija',
       phone: 'Telefon: +381 11 123 4567',
       email: 'Email: office@advokat-medjunarodno.rs',
+    },
+    team: {
+      members: [
+        {
+          name: 'Vuk Vučković',
+          role: 'Osnivač / Advokat',
+          bio: 'Magistar prava osiguranja (Univerzitet u Kelnu). Specijalizovan za poslovno, trgovinsko i građansko pravo sa dugogodišnjim iskustvom u zastupanju domaćih i stranih klijenata.',
+        },
+        {
+          name: 'Milan Šogorov',
+          role: 'Advokat',
+          bio: 'Master pravnik sa fokusom na obligaciono, prekršajno i ekološko pravo. Član tima od 2013. godine, sa bogatim iskustvom u sudskim postupcima.',
+        },
+        {
+          name: 'Prof. Dr Jelena Šogorov Vučković',
+          role: 'Konsultant / Vanredni profesor',
+          bio: 'Doktor pravnih nauka (Univerzitet u Beogradu) i magistar (Münster). Ekspert za pravo EU, bankarsko i berzansko pravo.',
+        },
+        {
+          name: 'Margareta Petrović',
+          role: 'Advokatski saradnik',
+          bio: 'Master pravnik sa izuzetnim znanjem mađarskog, engleskog i nemačkog jezika. Specijalizovana za građansko i upravno pravo.',
+        },
+        {
+          name: 'Adrian Urač',
+          role: 'Advokatski pripravnik',
+          bio: 'Master pravnik (Sorbona, Pariz) i komunikolog (Sciences Po). Govori srpski, mađarski, francuski, engleski, španski i italijanski.',
+        },
+      ]
     }
   },
   EN: {
@@ -101,6 +130,35 @@ export const translations = {
       address: 'Address: Knez Mihailova, Belgrade, Serbia',
       phone: 'Phone: +381 11 123 4567',
       email: 'Email: office@international-lawyer-serbia.com',
+    },
+    team: {
+      members: [
+        {
+          name: 'Vuk Vučković',
+          role: 'Founder / Lawyer',
+          bio: 'Master of Insurance Law (University of Cologne). Specialized in business, commercial, and civil law with extensive experience in representing domestic and foreign clients.',
+        },
+        {
+          name: 'Milan Šogorov',
+          role: 'Lawyer',
+          bio: 'Master of Law with a focus on obligations, misdemeanors, and environmental law. Team member since 2013, with rich experience in court proceedings.',
+        },
+        {
+          name: 'Prof. Dr Jelena Šogorov Vučković',
+          role: 'Consultant / Associate Professor',
+          bio: 'Doctor of Legal Sciences (University of Belgrade) and Master of Laws (Münster). Expert in EU law, banking, and stock exchange law.',
+        },
+        {
+          name: 'Margareta Petrović',
+          role: 'Legal Associate',
+          bio: 'Master of Law with exceptional knowledge of Hungarian, English, and German. Specialized in civil and administrative law.',
+        },
+        {
+          name: 'Adrian Urač',
+          role: 'Trainee Lawyer',
+          bio: 'Master of Law (Sorbonne, Paris) and Communicologist (Sciences Po). Speaks Serbian, Hungarian, French, English, Spanish, and Italian.',
+        },
+      ]
     }
   },
   FR: {
@@ -147,6 +205,35 @@ export const translations = {
       address: 'Adresse : Knez Mihailova, Belgrade, Serbie',
       phone: 'Tél : +381 11 123 4567',
       email: 'Email : office@avocat-serbie.fr',
+    },
+    team: {
+      members: [
+        {
+          name: 'Vuk Vučković',
+          role: 'Fondateur / Avocat',
+          bio: 'Master en droit des assurances (Université de Cologne). Spécialisé en droit des affaires, commercial et civil.',
+        },
+        {
+          name: 'Milan Šogorov',
+          role: 'Avocat',
+          bio: 'Master en droit. Membre de l\'équipe depuis 2013, avec une riche expérience dans les procédures judiciaires.',
+        },
+        {
+          name: 'Prof. Dr Jelena Šogorov Vučković',
+          role: 'Consultante / Professeure associée',
+          bio: 'Docteur en sciences juridiques. Experte en droit de l\'UE, droit bancaire et boursier.',
+        },
+        {
+          name: 'Margareta Petrović',
+          role: 'Associée juridique',
+          bio: 'Master en droit avec une connaissance exceptionnelle du hongrois, de l\'anglais et de l\'allemand.',
+        },
+        {
+          name: 'Adrian Urač',
+          role: 'Avocat stagiaire',
+          bio: 'Master en droit (Sorbonne) et communicologue (Sciences Po). Parle plusieurs langues dont le français.',
+        },
+      ]
     }
   },
   HU: {
@@ -193,6 +280,35 @@ export const translations = {
       address: 'Cím: Knez Mihailova, Belgrád, Szerbia',
       phone: 'Tel: +381 11 123 4567',
       email: 'Email: office@ugyved-szerbia.hu',
+    },
+    team: {
+      members: [
+        {
+          name: 'Vuk Vučković',
+          role: 'Alapító / Ügyvéd',
+          bio: 'Biztosítási jogi mester (Kölni Egyetem). Gazdasági, kereskedelmi és polgári jogra szakosodott.',
+        },
+        {
+          name: 'Milan Šogorov',
+          role: 'Ügyvéd',
+          bio: 'Mesterjogász. 2013 óta a csapat tagja, széleskörű tapasztalattal a bírósági eljárásokban.',
+        },
+        {
+          name: 'Prof. Dr Jelena Šogorov Vučković',
+          role: 'Tanácsadó / Egyetemi docens',
+          bio: 'A jogtudományok doktora. Az EU-jog, a bank- és tőzsdejog szakértője.',
+        },
+        {
+          name: 'Margareta Petrović',
+          role: 'Jogi munkatárs',
+          bio: 'Mesterjogász, kiváló magyar, angol és német nyelvtudással. Polgári és közigazgatási jogra szakosodott.',
+        },
+        {
+          name: 'Adrian Urač',
+          role: 'Ügyvédjelölt',
+          bio: 'Mesterjogász (Sorbonne) és kommunikációs szakember (Sciences Po). Beszél magyarul, szerbül, franciául, angolul, spanyolul és olaszul.',
+        },
+      ]
     }
   },
   ES: {
@@ -239,6 +355,35 @@ export const translations = {
       address: 'Dirección: Knez Mihailova, Belgrado, Serbia',
       phone: 'Tel: +381 11 123 4567',
       email: 'Email: office@abogado-serbia.es',
+    },
+    team: {
+      members: [
+        {
+          name: 'Vuk Vučković',
+          role: 'Fundador / Abogado',
+          bio: 'Máster en Derecho de Seguros (Universidad de Colonia). Especializado en derecho comercial y civil.',
+        },
+        {
+          name: 'Milan Šogorov',
+          role: 'Abogado',
+          bio: 'Máster en Derecho. Miembro del equipo od 2013, con amplia experiencia en procesos judiciales.',
+        },
+        {
+          name: 'Prof. Dr Jelena Šogorov Vučković',
+          role: 'Consultora / Profesora Asociada',
+          bio: 'Doctora en Ciencias Jurídicas. Experta en derecho de la UE, derecho bancario y bursátil.',
+        },
+        {
+          name: 'Margareta Petrović',
+          role: 'Asociada Legal',
+          bio: 'Máster en Derecho con conocimientos excepcionales de húngaro, inglés y alemán.',
+        },
+        {
+          name: 'Adrian Urač',
+          role: 'Abogado en Prácticas',
+          bio: 'Máster en Derecho (Sorbona) y Comunicólogo (Sciences Po). Habla español con fluidez.',
+        },
+      ]
     }
   },
   IT: {
@@ -285,6 +430,35 @@ export const translations = {
       address: 'Indirizzo: Knez Mihailova, Belgrado, Serbia',
       phone: 'Tel: +381 11 123 4567',
       email: 'Email: office@avvocato-serbia.it',
+    },
+    team: {
+      members: [
+        {
+          name: 'Vuk Vučković',
+          role: 'Fondatore / Avvocato',
+          bio: 'Master in Diritto delle Assicurazioni (Università di Colonia). Specializzato in diritto commerciale e civile.',
+        },
+        {
+          name: 'Milan Šogorov',
+          role: 'Avvocato',
+          bio: 'Master in Giurisprudenza. Membro del team dal 2013, con ricca esperienza in procedimenti giudiziari.',
+        },
+        {
+          name: 'Prof. Dr Jelena Šogorov Vučković',
+          role: 'Consulente / Professore Associato',
+          bio: 'Dottore in Scienze Giuridiche. Esperta in diritto UE, diritto bancario e borsistico.',
+        },
+        {
+          name: 'Margareta Petrović',
+          role: 'Associata Legale',
+          bio: 'Master in Giurisprudenza con eccezionale conoscenza di ungherese, inglese i tedesco.',
+        },
+        {
+          name: 'Adrian Urač',
+          role: 'Praticante Avvocato',
+          bio: 'Master in Giurisprudenza (Sorbona) e Comunicatore (Sciences Po). Parla diverse lingue tra cui l\'italiano.',
+        },
+      ]
     }
   }
 };
