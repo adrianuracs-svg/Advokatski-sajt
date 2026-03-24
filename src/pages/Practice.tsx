@@ -19,8 +19,7 @@ export const Practice = () => {
           >
             <h1 className="text-4xl md:text-5xl font-bold text-stone-900 mb-6">{t.practice.title}</h1>
             <p className="text-stone-600 text-lg leading-relaxed">
-              {t.practice.description} Naša kancelarija je specijalizovana za prekogranične pravne izazove, 
-              pružajući sigurnost klijentima iz celog sveta koji posluju ili borave u Srbiji i Crnoj Gori.
+              {t.practice.description} {t.practice.extraDescription}
             </p>
           </motion.div>
         </div>
@@ -44,18 +43,12 @@ export const Practice = () => {
                 {item.desc}
               </p>
               <ul className="space-y-3">
-                <li className="flex items-center text-sm text-stone-500">
-                  <CheckCircle2 className="h-4 w-4 mr-2 text-stone-400" />
-                  Stručno savetovanje i analiza slučaja
-                </li>
-                <li className="flex items-center text-sm text-stone-500">
-                  <CheckCircle2 className="h-4 w-4 mr-2 text-stone-400" />
-                  Zastupanje pred nadležnim organima
-                </li>
-                <li className="flex items-center text-sm text-stone-500">
-                  <CheckCircle2 className="h-4 w-4 mr-2 text-stone-400" />
-                  Izrada pravne dokumentacije na više jezika
-                </li>
+                {t.practice.features.map((feature, fIdx) => (
+                  <li key={fIdx} className="flex items-center text-sm text-stone-500">
+                    <CheckCircle2 className="h-4 w-4 mr-2 text-stone-400" />
+                    {feature}
+                  </li>
+                ))}
               </ul>
             </motion.div>
           ))}
@@ -64,20 +57,18 @@ export const Practice = () => {
         {/* Extra SEO Text */}
         <div className="mt-24 bg-stone-900 rounded-[3rem] p-12 md:p-20 text-white">
           <div className="max-w-4xl">
-            <h2 className="text-3xl font-bold mb-8">Zašto odabrati našu kancelariju za međunarodno pravo?</h2>
+            <h2 className="text-3xl font-bold mb-8">{t.practice.whyTitle}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
-                <h4 className="text-xl font-semibold mb-4 text-stone-300">Lokalna ekspertiza, globalni standardi</h4>
+                <h4 className="text-xl font-semibold mb-4 text-stone-300">{t.practice.why1Title}</h4>
                 <p className="text-stone-400 leading-relaxed">
-                  Poznajemo srpsko i crnogorsko pravo do detalja, ali razmišljamo globalno. Naši advokati su školovani 
-                  na prestižnim evropskim univerzitetima i redovno prate promene u EU regulativi.
+                  {t.practice.why1Desc}
                 </p>
               </div>
               <div>
-                <h4 className="text-xl font-semibold mb-4 text-stone-300">Višejezična komunikacija</h4>
+                <h4 className="text-xl font-semibold mb-4 text-stone-300">{t.practice.why2Title}</h4>
                 <p className="text-stone-400 leading-relaxed">
-                  Komunikacija je ključ uspeha. Pružamo usluge na srpskom, engleskom, mađarskom, francuskom, španskom i italijanskom jeziku, 
-                  što eliminiše barijere i nesporazume u kompleksnim pravnim stvarima.
+                  {t.practice.why2Desc}
                 </p>
               </div>
             </div>

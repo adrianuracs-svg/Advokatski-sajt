@@ -87,35 +87,15 @@ export const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8 leading-tight">
-                Vodeća advokatska kancelarija za međunarodno pravo u Srbiji i Crnoj Gori
+                {t.home.seoTitle}
               </h2>
               <div className="space-y-6 text-stone-600 leading-relaxed text-lg">
-                <p>
-                  Naša kancelarija je prepoznata kao lider u oblasti <strong>međunarodnog privatnog prava</strong> i 
-                  <strong>prava Evropske unije</strong>. Sa decenijskim iskustvom u zastupanju stranih klijenata, 
-                  pružamo sigurnost u kompleksnom pravnom okruženju Balkana.
-                </p>
-                <p>
-                  Bilo da ste investitor koji traži <strong>pravni savet za ulaganje u Srbiji</strong>, ili pojedinac 
-                  kojem je potreban <strong>advokat za pravo stranaca</strong>, naš tim nudi personalizovan pristup 
-                  na šest svetskih jezika. Razumemo specifičnosti prekograničnih sporova i važnost usklađenosti sa 
-                  EU regulativama.
-                </p>
-                <p>
-                  Specijalizovani smo za <strong>međunarodnu privredu</strong>, arbitražu, i zaštitu ljudskih prava. 
-                  Naša misija je da budemo most između vaših poslovnih ciljeva i lokalnog zakonodavstva, osiguravajući 
-                  maksimalnu pravnu zaštitu.
-                </p>
+                <p>{t.home.seoText1}</p>
+                <p>{t.home.seoText2}</p>
+                <p>{t.home.seoText3}</p>
               </div>
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  'Stručnost u EU integracijama',
-                  'Višejezična podrška (6 jezika)',
-                  'Zastupanje u Crnoj Gori',
-                  'Eksperti za arbitražu',
-                  'Poreska optimizacija',
-                  'Pravo nepokretnosti'
-                ].map((item, i) => (
+                {t.home.seoFeatures.map((item, i) => (
                   <div key={i} className="flex items-center space-x-2">
                     <CheckCircle2 className="h-5 w-5 text-stone-800" />
                     <span className="text-stone-700 font-medium">{item}</span>
@@ -133,8 +113,8 @@ export const Home = () => {
                 />
               </div>
               <div className="absolute -bottom-8 -left-8 bg-stone-900 text-white p-8 rounded-2xl hidden md:block max-w-xs shadow-xl">
-                <p className="text-2xl font-bold mb-2">15+ Godina</p>
-                <p className="text-stone-400 text-sm uppercase tracking-wider font-semibold">Iskustva u međunarodnim pravnim poslovima</p>
+                <p className="text-2xl font-bold mb-2">{t.home.experienceYears}</p>
+                <p className="text-stone-400 text-sm uppercase tracking-wider font-semibold">{t.home.experienceText}</p>
               </div>
             </div>
           </div>
@@ -160,7 +140,7 @@ export const Home = () => {
                 </Link>
                 <p className="text-stone-600 text-sm leading-relaxed mb-6">{item.desc}</p>
                 <Link to={`/practice/${idx}`} className="text-stone-900 font-bold text-sm inline-flex items-center hover:underline">
-                  Saznajte više <ArrowRight className="ml-1 h-4 w-4" />
+                  {t.home.learnMore} <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </motion.div>
             ))}
@@ -170,7 +150,7 @@ export const Home = () => {
               to="/practice"
               className="inline-flex items-center justify-center px-10 py-4 bg-stone-900 text-white font-bold rounded-full hover:bg-stone-800 transition-all"
             >
-              Pogledajte sve delatnosti
+              {t.home.viewAll}
             </Link>
           </div>
         </div>
